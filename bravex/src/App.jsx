@@ -6,26 +6,26 @@ import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 3000)
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 1500)
 
-  }, [])
+  // }, [])
 
   return (
     <>
-    { loading ? <div className="h-screen fixed w-full bg-[rgba(0,0,0,0.9)] flex items-center justify-center">
+    { loading ? <div className="h-screen w-full bg-[rgba(0,0,0,0.9)] flex items-center justify-center">
     <div className="absolute z-10 size-40 rounded-full bg-red-40 flex items-center justify-center">
         <p className="font-mono text-white">LIVE DEMOS</p>
 
         </div>
-      <div className="relative size-40 rounded-full bg-black border-2 border-dashed flex items-center justify-center animate-spin">
+      <div className="relative size-40 rounded-full bg-black border-2 border-dashed border-spacing-5 flex items-center justify-center animate-spin">
         
       </div>
     </div> : 
-    <div className="h-screen fixed w-full bg-[rgba(0,0,0,0)] flex items-center justify-center">
-       <div className="relative w-60 mx-auto bg-black ">
+    <div className="h-screen w-full bg-[rgba(0,0,0,0)] flex items-center justify-center ">
+       <div className="relative right-0 w-60 mx-auto bg-black slideInRight ">
         <div className="w-[30%] left-[35%] absolute bg-red-40 h-full flex justify-between">
           <div className="relative w-[1px] h-full bg-gray-800">
             <div className="absolute -left-[1px] trail h-[10%] bg-white w-[3px] bg-gradient-to-b from-gray-500 to-white rounded-b-full"></div>
