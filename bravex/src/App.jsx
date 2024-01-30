@@ -6,12 +6,12 @@ import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 1500)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
 
-  // }, [])
+  }, [])
 
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
         <p className="font-mono text-white">LIVE DEMOS</p>
 
         </div>
-      <div className="relative size-40 rounded-full bg-black border-2 border-dashed border-spacing-5 flex items-center justify-center animate-spin">
+      <div className="relative size-40 rounded-full bg-black border-2 border-dashed dash flex items-center justify-center animate-spin">
         
       </div>
     </div> : 
